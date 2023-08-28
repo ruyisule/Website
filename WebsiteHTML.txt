@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruyi Sule Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+
+    <div class="container">
+        <nav>
+            <img src="Images/RS.png" class="RS">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+        </nav>
+
+        <div class="header-text">
+                <p>Computer Engineer</p>
+                <h1>Hi, I'm <span>Ruyi Sule</span><br>from the Bay Area</h1>
+        </div>
+
+    </div>
+    
+</div>
+
+<!------------------about--------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/headshot2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to the digital domain of Ruyi Sule, I am a Computer Engineering student at San Jose State University. 
+                        With a passion for all things tech, I am equipped with a solid foundation in computer engineering 
+                        principles and a keen eye for innovative solutions. As you navigate through my project portfolio, 
+                        you'll witness a collection of some of my projects that reflect my genuine interest for the art of programming, 
+                        hardware design, and problem-solving. Embark on a visual odyssey of creativity and precision, 
+                        where theory transforms into tangible innovation.
+                </p>
+
+                <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects/experience')">Projects / Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C/C++</span><br>Data Structures and Algorithms</li>
+                            <li><span>Electrical Design</span><br>Circuit analysis and design</li>
+                            <li><span>UI/UX</span><br>Web Development/Interface with HTML and CSS</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="projects/experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>SJSU Formula SAE - Spartan Racing Design Team</li>
+                        <li><span>2023</span><br>Fingerprint Duffle Bag Lock System</li>
+                        <li><span>2023</span><br>Designing Web/App Interfaces</li>
+                        <li><span>2023</span><br>Voltage Comparator Stoplight</li>
+                        <li><span>2022</span><br>Self Driving Robot</li>
+                        <li><span>2021</span><br>Wind Turbine Generator</li>
+                
+                    </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                     <ul>
+                        <li><span>2023 - Current </span><br>SJSU Cybersecurity Certificate Program </li>
+                        <li><span>2021 - Current </span><br>BS Computer Engineering at San Jose State University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Fingerprint Duffle Lock</h3>
+                    <p>The locking system utilizes arduino and a fingerprint
+                        sensor to create a robust user-friendly security
+                        solution for personal dufflebags. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Op-Amp Voltage Comparator Stoplight</h3>
+                    <p>Using an op-amp as a voltage comparator, 
+                        this project mimics a traffic light sequence. 
+                        The op-amp compares reference and variable voltages to control LEDs 
+                        that simulate red, yellow, and green traffic signals, 
+                        showcasing voltage comparison and digital 
+                        control principles in action. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Self Driving Robot</h3>
+                    <p>Desinged, built, and programmed (using EasyC and a 
+                        Infrared Board) a self driving robot that would 
+                        turn off a set homing beacon and retreive the second one. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a hred="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-------------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> ruyis117@gmail.com</p>
+                <p>(510)512-6835</p>
+                <p>https://www.linkedin.com/in/ruyi-sule-a0a79b20b/</p>
+                <p>https://github.com/ruyisule</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ruyi-sule-a0a79b20b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>                   
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ruyi Sule. Made with HTML and CSS </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvroKT0r9imoK_U0nCgWOjnJM3arHDjeZq8OxuIRUl2ESncTLSyHlYFkY6tkTIcZfp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
